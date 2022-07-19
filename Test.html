@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTUFF A PCS company</title>
+    <style>
+        html {
+            text-align: center;
+           
+            font-size: small;
+        }
+        header {
+            height: 55px;
+            padding:30px;
+            width: 81%;
+            text-align: center;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            font-style: italic;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px; 
+        }
+        header~h3{
+            text-transform: uppercase;
+        }
+        header~p{
+            font-style: italic;
+        }
+        body {
+            align-content: center;
+            font-size: smaller;
+            font-family: helvetica, Arial, sans-serif;
+        }
+          .row {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;     
+        }
+        img{
+            display: block;
+            
+        }
+        .pic1{
+          margin-right: 2px; 
+          margin-left: 2px;
+          
+        }
+        .pic2{
+          margin-left: 2px;
+          border-left: 2px solid black; padding: 1px;
+        }
+        video{
+            display: block;
+            width: 50px;
+            margin: 1px ;
+            border-left: 2px solid black; padding: 1px;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+            justify-content: center;
+            margin: 0;
+            text-align: center;       
+        }
+        @media screen and (max-width: 1000px) {
+           .row { 
+                display: inline-block;
+                width: 92%;
+                padding: 0;
+            }
+        }  
+         @media screen and (max-width: 1000px) {
+           .pic2 { 
+                
+                border-left: 0;
+            }
+        } 
+         @media screen and (max-width: 1000px) {
+           .pic1 { 
+                width: 50px;
+                border-left: 0;
+            }
+        }    
+         @media screen and (max-width: 1000px) {
+           video { 
+              border-left: 0; 
+              
+            }
+        }  
+        .side {
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+        ul{
+            margin-right:30px ;
+            margin-left:65px;
+        }
+        @media screen  and (max-width:1000px){
+          ul{
+             margin-right:50px ;
+             margin-left: -20px;
+            }
+        }
+        .li {
+            position: fixed;
+            background-color: black;
+            color: white;
+            text-align: left;
+            border-top: 0;
+            padding: 0px;
+           
+            padding-left: 1px;
+            width: 100%;
+            top: -7px; 
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            offset-anchor: bottom 10px right 20px;  
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        nav.links {
+            position: absolute;
+            top: 5px;
+            right: 45px;
+            margin: 0;
+        }
+
+        nav:last-of-type {
+            background-color: gray;
+            text-align: center;
+            
+        }
+
+        section{
+            text-align: left;
+            margin-right: 10px;
+            margin-left: 112px;
+           
+        }
+         @media screen  and (max-width:1000px){
+          section{
+             margin-right:50px ;
+             margin-left: 30px;
+            }
+        }
+        @media screen and (max-width:1000px){
+            .sec{
+               margin-left:15px; 
+            }
+        }
+        .form{
+            height: 90px;
+            width: 85%;
+            text-shadow:5px;
+            text-align: center;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px; 
+        }
+       input{
+           border-bottom-left-radius: 5px;
+           border-bottom-right-radius: 5px;   
+        }
+        @media screen and (max-width:1000px) {
+            .form{
+                width: 92%;
+                padding: 11px;
+            }
+        }
+
+        caption {
+            font-size: 1rem;
+
+            margin-top: auto;
+            padding: 1px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 75%;
+            margin-left: 200px;
+            margin-right: 300px;
+        }
+        @media screen and (max-width:1000px) {
+            table{
+                width: 85%;
+                height: 5px;
+                margin-right: 300px;
+                margin-left: 50px;
+            }
+        }
+
+        table tbody tr:hover {
+            background-color:blue;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color:green;
+           
+        }
+        .box{
+            text-align: right;
+        }
+        .year{
+           font-weight: bold;
+        }
+       
+
+        td:last-child {
+            background-color: brown;
+        }
+        .tab:last-child{
+           background-color: green;
+        }
+
+
+        th {
+            padding: .4em;
+            text-align: right;
+            border: solid black;
+            border: solid black;
+
+        }
+
+        td {
+            border-right: 2px solid;
+        }
+
+
+        tr:not(first child) {
+            border-left: solid black;
+            border-right: solid black;
+            border-bottom: solid black;
+            border-top: solid black;
+           
+        }
+
+        .bot{ 
+            position: fixed; 
+            height: 4em;
+            background-color: black;
+            color: white;
+            text-align: left;
+            border-top: 0;
+            padding: 1px;
+             width: 100%;
+            bottom: 0;
+           
+        }
+        p{
+           bottom: -3px;
+           
+        }
+
+        .info {
+            overflow: auto;
+            overflow: hidden;
+            display: inline-block;
+            text-align: left;
+            margin-right: 90px;
+            margin-left: 110px;
+            bottom: 8px;   
+            
+        }
+         @media screen  and (max-width:1000px){
+           .info{
+            width:95%;
+            text-align: left;
+            margin-right: 50px;
+            margin-left:  20px;
+            
+          
+            }
+        }
+        h5{
+           
+            margin-right: 10px;
+            margin-left: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="li">
+        <ul class="links">
+            <a href="#1">&nbsp;&nbsp; Products </a>
+            <a href="#2">&nbsp;&nbsp;Sighn up</a>
+            <a href="#3">&nbsp;&nbsp;financials</a>
+            <a href="#4">&nbsp;&nbsp;About Us </a>
+        </ul>
+    </nav>
+
+    <header>
+        <H3>ESTUFF</H3>
+        <p>A PCS company</p>
+    </header>
+    <section class="side"  id="1">
+    <h2>Products</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </section>
+    <div class="row">
+        <div class="Column">
+            <h2>Computers</h2>
+            <img class="pic1" src="images/macworld.jpg" style="width: 100%;">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel eveniet nulla numquam! 
+            voluptate adipisci molestias atque! Obcaecati, rem
+            Deserunt incidunt eos temporibus harum rerum a culpa magnam commodi modi repellat,</p>
+        </div>
+        <div class="Column">
+            <h2>Choirs</h2>
+            <video src="Videos/El_Hanaar_Hazeh.mp4" style="width: 100%;" controls loop poster="images/shira.png"></video>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel eveniet nulla numquam!
+                voluptate adipisci molestias atque! Obcaecati, rem
+                Deserunt incidunt eos temporibus harum rerum a culpa magnam commodi modi repellat,</p>
+        </div>
+        <div class="Column">
+            <h2>Candy</h2>
+            <img class="pic2" src="images/candy.png" style="width: 100%;">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel eveniet nulla numquam!
+                voluptate adipisci molestias atque! Obcaecati, rem
+                Deserunt incidunt eos temporibus harum rerum a culpa magnam commodi modi repellat,</p>
+        </div>
+    </div>
+    <nav class="form">
+        <h3 id="2">Sign Me Up!</h3>
+        <form method="post" action=Sur.php>
+            <label>Name:
+                <input name="name" placeholder="your name" required="requried">
+                <label>Email
+                    <input type="email"id="email" placeholder="your email" required="requried">
+                    <input type="submit"Sign Me Up>
+
+        </form>
+    </nav>
+    <section class="sec">
+        <h2  id="3">financials</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+    </section>
+    <table>
+        <caption>
+            <h3> Profits-By Quarter</h3>
+        </caption>
+
+        <tbody>
+            <tr>
+                <td class="tab">
+                    <h4>Year</h4>
+                </td>
+                <td class="tab">
+                    <h4>1st Quarter profits</h4>
+                </td>
+                <td class="tab">
+                    <h4>2nd quarter profits</h4>
+                </td>
+                <td class="tab">
+                    <h4>3rd quarter profits</h4>
+                </td>
+                <td class="tab">
+                    <h4>4th quarter profits</h4>
+                </td>
+                <td class="tab">
+                    <h4>Total</h4>
+                </td>
+            <tr>
+
+                <td class="year">2012</td>
+                <td class="box">$125464.32</td>
+                <td class="box">$1154545.67</td>
+                <td class="box">$1236566.98</td>
+                <td class="box">$1368546.32</td>
+                <td class="box">$5050934.29</td>
+            <tr>
+                <td class="year">2013</td>
+                <td class="box">$1385475.67</td>
+                <td class="box">$1485690.23</td>
+                <td class="box">$1365568.54</td>
+                <td class="box">$1545435.11</td>
+                <td class="box">$5623344.75</td>
+
+            <tr>
+                <td class="year">2014</td>
+                <td class="box">$1589878.76</td>
+                <td class="box">$1698986.45</td>
+                <td class="box">$164556.32</td>
+                <td class="box">$17898890.35</td>
+                <td class="box">$86545657.88</td>
+
+
+            <tr>
+                <td class="year">2015</td>
+                <td class="box">$1889776.22</td>
+                <td class="box">$1854565.71</td>
+                <td class="box">NA</td>
+                <td class="box">NA</td>
+                <td class="box">43654654.93</td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="box">Total</td>
+                <td class="box">$20978798.85</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    <article class="info">
+    <h2 class="us" id="4">About Us</h2>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam deserunt perspiciatis inventore quaerat minus? Quasi nesciunt blanditiis magnam, facere labore architecto. Perspiciatis minima totam tenetur ullam! Ullam, placeat eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia et ut accusamus amet possimus delectus illo nihil laboriosam beatae. Velit voluptate blanditiis mollitia perspiciatis neque iusto debitis ratione numquam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis. Quae eius necessitatibus repudiandae quas adipisci libero animi possimus sapiente suscipit ipsa ad unde saepe, eveniet autem beatae quod quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati maiores quas labore tempora autem nemo iusto quis hic laboriosam sapiente aspernatur unde, dolorum esse porro et quidem assumenda similique? Maiores?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque eius soluta dolorem magnam, ea corporis molestiae voluptates! Ipsa eveniet enim fugit, alias repellendus quod impedit sunt magnam veniam nulla adipisci.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi nobis doloremque voluptate totamQuasi nesciunt blanditiis magnam, facere labore architecto. Perspiciatis minima totam tenetur ullam! Ullam, placeat
+    eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia et ut accusamus amet possimus delectus illodolor sit amet consectetur adipisicing elit. Quae quam deserunt perspiciatis inventore quaerat minus? Quasi nesciunt
+    blanditiis magnam, facere labore architecto. Perspiciatis minima totam tenetur ullam! Ullam, placeat eos?Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Dolor quia et ut accusamus amet possimus delectus illo nihil laboriosam
+    beatae. Velit voluptate blanditiis mollitia perspiciatis neque iusto debitis ratione numquam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis. Quae eius necessitatibus repudiandae quas
+    adipisci libero animi possimus sapiente suscipit ipsa ad unde saepe, eveniet autem beatae quod quis?Lorem ipsum, dolor
+    sit amet consectetur adipisicing elit. Obcaecati maiores quas labore tempora autem nemo iusto quis hic laboriosam
+    sapiente aspernatur unde, dolorum esse porro et quidem assumenda similique? Maiores?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque eius soluta dolorem magnam, ea corporis molestiae
+    voluptates! Ipsa eveniet enim fugit, alias repellendus quod impedit sunt magnam veniam nulla adipisci.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi nobis doloremque voluptate totamQuasi nesciunt
+    blanditiis magnam, facere labore architecto. Perspiciatis minima totam tenetur ullam! Ullam, placeat
+    eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia et ut accusamus amet possimus delectus illo
+    nihil laboriosam beatae. Velit voluptate blanditiis mollitia perspiciatis neque iusto debitis ratione numquam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis. Quae eius necessitatibus repudiandae quas
+    adipisci libero animi possimus sapiente suscipit ipsa ad unde saepe, eveniet autem beatae quod quis?Lorem ipsum, dolor
+    sit amet consectetur adipisicing elit. Obcaecati maiores quas labore tempora autem nemo iusto quis hic laboriosam
+    sapiente aspernatur unde, dolorum esse porro et quidem assumenda similique? Maiores?
+    piciatis inventore quaerat minus? Quasi nesciunt blanditiis magnam, facere labore architecto. Perspiciatis minima totam
+    tenetur ullam! Ullam, placeat eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia et ut accusamus
+    amet possimus delectus illo nihil laboriosam beatae. Velit voluptate blanditiis mollitia perspiciatis neque iusto
+    debitis ratione numquam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis. Quae eius necessitatibus repudiandae quas
+    adipisci libero animi possimus sapiente suscipit ipsa ad unde saepe, eveniet autem beatae quod quis?Lorem ipsum, dolor
+    sit amet consectetur adipisicing elit. Obcaecati maiores quas labore tempora autem nemo iusto quis hic laboriosam
+    sapiente aspernatur unde, dolorum esse porro et quidem assumenda similique? Maiores?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque eius soluta dolorem magnam, ea corporis molestiae
+    voluptates! Ipsa eveniet enim fugit, alias repellendus quod impedit sunt magnam veniam nulla adipisci.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi nobis doloremque voluptate totamQuasi nesciunt
+    blanditiis magnam, facere labore architecto. Perspiciatis minima totam tenetur ullam! Ullam, placeat
+    eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia et ut accusamus amet possimus delectus illo
+    nihil laboriosam beatae. Velit voluptate blanditiis mollitia perspiciatis neque iusto debitis ratione numquam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis. Quae eius necessitatibus repudiandae quas
+    adipisci libero animi possimus sapiente suscipit ipsa ad unde saepe, eveniet autem beatae quod quis?Lorem ipsum, dolor
+    sit amet consectetur adipisicing elit. Obcaecati maiores quas labore tempora autem nemo iusto quis hic laboriosam
+    sapiente aspernatur unde, dolorum esse porro et quidem assumenda similique? Maiores?
+    recusandae ratione,
+    sunt ad aliquid, eaque fuga magnam tempore repellendus. Pariatur eaque inventore nesciunt quisquam animi!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta quae ducimus quaerat consequatur vero
+    tenetur
+    facere vitae officia architecto sit, aspernatur itaque aliquid exercitationem laudantium quis facilis eos
+    ratione?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nostrum eius iusto cum veniam labore
+    repudiandae aperiam porro tempore.
+    Illo excepturi, quaerat culpa eius beatae porro iure ullam molestias aperiam?Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Deleniti sit ullam numquam cumque,
+    mollitia est maxime a saepe error quisquam impedit! Necessitatibus maxime iusto corrupti. Consectetur id
+    laboriosam veritatis ut.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus similique consectetur dolorum laboriosam
+    sapiente non corrupti magnam culpa aliquam modi unde necessitatibus
+    temporibus perspiciatis officia dolores, nisi eos, ex molestias. Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Deleniti quam veniam commodi.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ex facilis repellat.
+    Maxime, ipsam! Quos delectus quasi ab beatae eius maiores accusantium molestiae. Debitis quod quas officiis
+    accusamus reprehenderit architecto!
+    Tenetur hic, aspernatur blanditiis totam, suscipit libero earum voluptas sint modi voluptatibus exercitationem
+    praesentium quaerat! A, veritatis aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eos,
+    qui minima temporibus, sequi at reprehenderit fugit id in quam,
+    obcaecati aliquid illo. Blanditiis dolor repellendus eligendi aut, adipisci nesciunt. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit.
+    Quo reiciendis at, exercitationem asperiores corrupti nisi optio laudantium eos quod quisquam quia dolorem
+    libero totam ducimus autem magni inventore? Reiciendis, exercitationem.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, aut vitae vel cum culpa exercitationem! Aut
+    enim nulla voluptatem optio nobis facere.
+    Quod molestias expedita minima sed nostrum voluptatum non.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, itaque voluptatum officiis voluptatem magni
+    officia.
+    Quaerat consectetur maxime rem a corrupti ducimus minima eos provident. Ipsa expedita eum quam cupiditate?
+    nihil laboriosam beatae. Velit voluptate blanditiis mollitia perspiciatis neque iusto debitis ratione numquam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis. Quae eius necessitatibus repudiandae quas
+    adipisci libero animi possimus sapiente suscipit ipsa ad unde saepe, eveniet autem beatae quod quis?Lorem ipsum, dolor
+    sit amet consectetur adipisicing elit. Obcaecati maiores quas labore tempora autem nemo iusto quis hic laboriosam
+    sapiente aspernatur unde, dolorum esse porro et quidem assumenda similique? Maiores?
+    piciatis inventore quaerat minus? Quasi nesciunt blanditiis magnam, facere labore architecto. Perspiciatis minima totam
+    tenetur ullam! Ullam, placeat eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia et ut accusamus
+    amet possimus delectus illo nihil laboriosam beatae. Velit voluptate blanditiis mollitia perspiciatis neque iusto
+    debitis ratione numquam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis. Quae eius necessitatibus repudiandae quas
+    adipisci libero animi possimus sapiente suscipit ipsa ad unde saepe, eveniet autem beatae quod quis?Lorem ipsum, dolor
+    sit amet consectetur adipisicing elit. Obcaecati maiores quas labore tempora autem nemo iusto quis hic laboriosam
+    sapiente aspernatur unde, dolorum esse porro et quidem assumenda similique? Maiores?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque eius soluta dolorem magnam, ea corporis molestiae
+    voluptates! Ipsa eveniet enim fugit, alias repellendus quod impedit sunt magnam veniam nulla adipisci.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi nobis doloremque voluptate totamQuasi nesciunt
+    blanditiis magnam, facere labore architecto. Perspiciatis minima totam tenetur ullam! Ullam, placeat
+    eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia et ut accusamus amet possimus delectus illo
+    nihil laboriosam beatae. Velit voluptate blanditiis mollitia perspiciatis neque iusto debitis ratione numquam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis. Quae eius necessitatibus repudiandae quas
+    adipisci libero animi possimus sapiente suscipit ipsa ad unde saepe, eveniet autem beatae quod quis?Lorem ipsum, dolor
+    sit amet consectetur adipisicing elit. Obcaecati maiores quas labore tempora autem nemo iusto quis hic laboriosam
+    sapiente aspernatur unde, dolorum esse porro et quidem assumenda similique? Maiores?
+    recusandae ratione,
+    sunt ad aliquid, eaque fuga magnam tempore repellendus. Pariatur eaque inventore nesciunt quisquam animi!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta quae ducimus quaerat consequatur vero
+    tenetur
+    facere vitae officia architecto sit, aspernatur itaque aliquid exercitationem laudantium quis facilis eos
+    ratione?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nostrum eius iusto cum veniam labore
+    repudiandae aperiam porro tempore.
+    Illo excepturi, quaerat culpa eius beatae porro iure ullam molestias aperiam?Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Deleniti sit ullam numquam cumque,
+    mollitia est maxime a saepe error quisquam impedit! Necessitatibus maxime iusto corrupti. Consectetur id
+    laboriosam veritatis ut.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus similique consectetur dolorum laboriosam
+    sapiente non corrupti magnam culpa aliquam modi unde necessitatibus
+    temporibus perspiciatis officia dolores, nisi eos, ex molestias. Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Deleniti quam veniam commodi.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ex facilis repellat.
+    Maxime, ipsam! Quos delectus quasi ab beatae eius maiores accusantium molestiae. Debitis quod quas officiis
+    accusamus reprehenderit architecto!
+    Tenetur hic, aspernatur blanditiis totam, suscipit libero earum voluptas sint modi voluptatibus exercitationem
+    praesentium quaerat! A, veritatis aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eos,
+    qui minima temporibus, sequi at reprehenderit fugit id in quam,
+    obcaecati aliquid illo. Blanditiis dolor repellendus eligendi aut, adipisci nesciunt. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit.
+    Quo reiciendis at, exercitationem asperiores corrupti nisi optio laudantium eos quod quisquam quia dolorem
+    libero totam ducimus autem magni inventore? Reiciendis, exercitationem.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, aut vitae vel cum culpa exercitationem! Aut
+    enim nulla voluptatem optio nobis facere.
+    Quod molestias expedita minima sed nostrum voluptatum non.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, itaque voluptatum officiis voluptatem magni
+    officia.
+    Quaerat consectetur maxime rem a corrupti ducimus minima eos provident. Ipsa expedita eum quam cupiditate?End
+    </p>
+    </article>
+    <footer class="bot">
+        <div id=" pcs2019">
+            <h5>pcs2019 </h5>
+        </div>
+    </footer>
+</body>
+
+</html>
