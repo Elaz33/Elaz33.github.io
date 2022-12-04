@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<nav>
+    <header><a href="index.html">home</a></header>
+</nav>
+<style>
+    body {
+        width: 80%;
+        margin: auto;
+        background-color: gold;
+    }
+
+    a {
+        color: brown;
+    }
+    
+
+
+    input {
+        display: block;
+        width: 50%;
+        max-width: 800px;
+        box-sizing: border-box;
+        margin-bottom: .5em;
+    }
+</style>
+
+<body>
+    <form method="post" action=Sur.php>
+        <label>First Name:
+            <input name="first" placeholder="Enter First Name" required="requried">
+        </label>
+        <label>Last Name:
+            <input name="last" placeholder="Enter Last Name" required="requried">
+        </label>
+        <label for="email">Email:</label>
+        <input placeholder="Email" type="email" id="Email" name="email">
+        <label for="Last visted">Last visted</label>
+        <input type="Date" id="date" name="date">
+        <label for="rating">Rate us</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" />
+        <textarea name="Comment" id="" cols="30" rows="10">Comment</textarea>
+        <input type="submit" />
+    </form>
+</body>
+
+</html>

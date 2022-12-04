@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+            
+             
+            
+            
+           
+        
+           /* div:nth-child(1){
+            background-color:  red;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+           }
+            div:nth-child(2){
+            background-color: purple;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-start: 4;
+           } 
+           div:nth-child(3){
+             background-color:brown ;
+             grid-column: 2 / 4;
+           }
+           div:nth-child(4) {
+        background-color: green;
+        grid-column: 1 / 2;
+        grid-row: 2 / 4; 
+        grid-row: 2 / span 2;
+      }
+      div:nth-child(5) {
+        background-color: red;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      } */
+      /* div:nth-child(6) {
+        background-color: purple;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+      } */
+   
+        /* first{
+            grid-area: first;
+        }
+        second{
+            grid-area: second;
+        }
+        third{
+            grid-area: third;
+        }
+        forth{
+            grid-area: forth;
+        }
+        fifth{
+           grid-area: fifth; 
+        } */
+       body{
+         display: grid;
+            grid-template-columns: 250px 50px 50px 250px ;
+            grid-template-rows: 250px 50px 50px 250px;
+          
+             
+           
+           
+            grid-template-areas:   " . first first . "
+                                   "   third fifth sixth second " 
+                                   "  third seventh  eighth second "
+                                   ".  forth forth ." 
+                                    
+        } 
+
+       div:nth-child(1){
+            background-color: red;
+            grid-area: first;         
+           
+        }
+        div:nth-child(2){
+            background-color: purple;
+            grid-area: second;
+           
+        }
+
+        div:nth-child(3){
+           background-color:  brown; 
+           grid-area: third;
+          
+        }
+        div:nth-child(4){
+            background-color: green;
+            grid-area: forth;
+           
+        }
+        div:nth-child(5) {
+        background-color: red;
+        grid-area: fifth;
+       
+      } 
+      
+       div:nth-child(6){
+            background-color: purple;
+            grid-area: sixth;
+       }
+        div:nth-child(7){
+            background-color: brown;
+            grid-area: seventh;
+       }
+        div:nth-child(8){
+            background-color:green;
+            grid-area: eighth;
+       }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+   
+    
+</body>
+</html>

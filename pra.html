@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+   
+    body{
+        display: grid;
+        grid-template-columns:repeat(12,50px);
+        grid-template-rows:  repeat(12,50px);
+        grid-template-areas:" . . . . right right right. . . . . "
+                             " . . . a . . . left . . . . "  
+                             " . . b . . . . . center . . . " 
+                             ". c . . k . l . . top . ."  
+                             "d . . . . . . . . . bottom . "
+                             " . e . . . j . . . rightcen . .  "
+                             ". . f . . . . . leftcen . . . "
+                             ". . . g . . . topright . . . .  "
+                             ". . . . h . topleft . . . . . "
+                             ". . . . . i . . . . . . "
+                             " . . . . bottomright bottomright bottomright . . . . . "
+                             " . . . . . topcen . . . . . . ";
+                                                    
+    }                       
+     div:nth-child(1){
+            background-color: blue;
+             grid-area: right;      
+           
+        }
+        div:nth-child(2){
+            background-color: purple;
+            grid-area: left;
+           
+        }
+
+        div:nth-child(3){
+           background-color: bisque; 
+          grid-area:center;
+          
+        }
+        div:nth-child(4){
+            background-color: green;
+            grid-area: top;
+           
+        }
+        div:nth-child(5) {
+        background-color: red;
+        grid-area: bottom;
+        
+      } 
+      
+       div:nth-child(6){
+            background-color:pink;
+            grid-area: rightcen;
+       }
+        div:nth-child(7){
+            background-color: blueviolet;
+             grid-area: leftcen;      
+           
+        }
+        div:nth-child(8){
+            background-color: palegreen;
+            grid-area: topright;
+           
+        }
+
+        div:nth-child(9){
+           background-color:  brown; 
+          grid-area:topleft;
+          
+        }
+        div:nth-child(10){
+            background-color: beige;
+            grid-area:bottomleft ;
+           
+        }
+        div:nth-child(11) {
+        background-color: royalblue;
+        grid-area:bottomright  ;
+        
+      } 
+      
+       div:nth-child(12){
+            background-color:black;
+            grid-area:topcen ;
+       }
+       div:nth-child(13){
+           background-color: burlywood; 
+        grid-area: a;
+        }
+        div:nth-child(14){
+            background-color: gold;
+            grid-area: b;
+           
+        }
+        div:nth-child(15) {
+        background-color: rebeccapurple;
+        grid-area: c;
+        
+      } 
+      
+       div:nth-child(16){
+            background-color:goldenrod;
+            grid-area: d;
+       }
+       div:nth-child(17){
+        background-color: antiquewhite;
+        grid-area: e;
+       }
+        div:nth-child(18){
+        background-color: aqua;
+        grid-area: f;
+       }
+        div:nth-child(19){
+        background-color: aqua;
+        grid-area: g;
+       }
+        div:nth-child(20){
+        background-color: aqua;
+        grid-area: h;
+       }
+        div:nth-child(21){
+        background-color: aqua;
+        grid-area: i;
+       }
+        div:nth-child(22){
+        background-color: rebeccapurple;
+        grid-area: j;
+       }
+        div:nth-child(23){
+        background-color: greenyellow;
+        grid-area: k;
+       }
+        div:nth-child(24){
+        background-color: greenyellow;
+        grid-area: l;
+       }
+  </style>
+</head>
+<body>
+   
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+ 
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div> 
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+
+</body>
+</html>

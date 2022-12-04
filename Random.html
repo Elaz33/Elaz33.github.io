@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My restaurant</title>
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://yui.yahooapis.com/3.11.0/build/cssnormalize-context/cssnormalize-context-min.css">
+</head>
+<style>
+    html {
+        margin: auto;
+    }
+
+    body {
+
+        text-align: center;
+        background-color: black;
+        color: whitesmoke;
+        white-space: pre;
+        background: rgb(63, 94, 251);
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 230, 1) 100%);
+    }
+
+    video {
+        width: 300px;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width:1400px) {
+        video {
+            width: 95%;
+        }
+    }
+
+    h1 {
+        text-decoration: underline;
+
+    }
+
+    .soupList,
+    .ChickenList {
+        text-align: center;
+        margin: auto;
+        list-style-position: inside;
+    }
+
+    ol li {
+        box-sizing: border-box;
+
+    }
+
+    li:first-child {
+        text-shadow: 2px 2px red
+    }
+
+
+    p {
+        text-shadow: 2px 2px red;
+
+    }
+
+    nav>h1 {
+        color: green;
+    }
+
+    header+a {
+        background-color: black;
+    }
+
+    h1~p {
+        color: orange;
+    }
+
+
+
+    a:hover {
+        background-color: beige;
+    }
+
+    h1::first-letter {
+        background-color: brown;
+    }
+
+    a {
+        position: fixed;
+        text-decoration: underline;
+        font-size: 18px;
+        left: 10px;
+
+        color: red;
+    }
+</style>
+
+<body>
+    <header><a href="index.html">home</a></header>
+    <a href="OurMenue.html">Our menue</a>
+
+    <nav>
+
+
+
+        <h1>soup</h1>
+        <p>there are 2 choices</p>
+        <ol class="soupList">
+
+            <li> chicken soup</li>
+            <li> veg soup</li>
+
+        </ol>
+        <h1>chicken fingers</h1>
+        <p>chicken fingers comes with a few choices of sauses</p>
+        <ul class="ChickenList">
+
+            <li>spicey mayo</li>
+            <li>garlic mayo</li>
+
+        </ul>
+        <h1>Potato Burekas</h1>
+
+        <h1>hot dog</h1>
+        </table>
+        <p>Here you can see our shwarama making in action</p>
+        <video src="Videos/production ID_4440943.mp4" controls></video>
+        <p>Hear the sizzel...</p>
+        <audio src="Audio/mixkit-frying-fish-on-a-hot-pan-123.wav" controls></audio>
+
+    </nav>
+    <div id="clear-fix"></div>
+    <h5>zsx344</h5>
+</body>
+
+</html>

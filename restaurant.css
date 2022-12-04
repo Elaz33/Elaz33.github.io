@@ -1,0 +1,38 @@
+ html {
+     text-align: center;
+
+     max-width: 800px;
+     margin: auto;
+ }
+
+ header {
+     width: 100%;
+     /*border-width: 30px;*/
+
+ }
+
+ image {
+     height: 200;
+     width: 1000;
+ }
+
+ a {
+     color: white;
+
+ }
+
+ a:visited {
+     color: red;
+ }
+
+ a:hover {
+     color: brown;
+ }
+
+ a:focus {
+     color: blue;
+ }
+
+ a:active {
+     color: black;
+ }
