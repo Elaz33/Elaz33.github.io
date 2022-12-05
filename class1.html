@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    #picture{
+         width: 200px;
+    }
+    #ingredients{
+         list-style-type: none;
+        padding: 0;
+    }
+    .noRecipe{
+        display: none;
+    }
+</style>
+<body>
+    <h1>ELAZARS RECIPES</h1>
+    <hr>
+    <select id="recipeSelect">
+        <option hidden>choose a recipe</option>
+    </select>
+    <h2 id="name"></h2>
+    <img id="picture">
+    <h3 class="noRecipe">ingredients</h3>
+    <ul id="ingredients"></ul>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script src="class1.js"></script>
+</body>
+</html>
