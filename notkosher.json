@@ -1,0 +1,22 @@
+[
+    {
+        "name":"lion",
+        "picture":"imag5.jpg"
+    },
+    {
+        "name":"tiger",
+        "picture":"imag6.jpg"
+    },
+    {
+        "name":"wolf",
+        "picture":"imag7.jpg"
+    },
+    {
+        "name":"squirrel",
+        "picture":"imag8.jpg"
+    },
+    {
+        "name":"zebra",
+        "picture":"imag9.jpg"
+    }
+]

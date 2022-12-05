@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        /* html,
+        body,
+        #sidebar,
+        video {
+            height: 100%;
+            margin: 0;
+        }
+    
+        #sidebar,
+        video {
+            float: left;
+        }
+    
+        #sidebar {
+            width: 25%;
+            border-right: 1px solid black;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+    
+        video {
+            width: 75%;
+        }
+    
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        #sidebar li {
+            padding-left: 1em;
+            margin-bottom: 1em;
+            border: 1px solid black;
+        }
+    
+        #sidebar span {
+            width: 50%;
+            display: inline-block;
+        }
+    
+        #sidebar img {
+            width: 40%;
+            height: 100px;
+            vertical-align: middle;
+        }
+    
+        .visited {
+            color: gray;
+        }
+    
+        .active {
+            background-color: yellow;
+        }
+    
+        #sidebar,
+        video {
+            display: none;
+        } --> */
+      html,
+      body,
+      #sidebar,
+      video{
+        height:  100%;
+        margin: 0;
+      }
+
+      #sidebar,video{
+         float: left;
+      }
+      #sidebar{
+        width: 25%;
+       border-right: 1px solid black;
+       box-sizing: border-box;
+       overflow: auto;
+      }
+
+      video{
+        width: 75%;
+      }
+
+      #sidebar ul{
+       list-style-type: none;
+       padding: 0;
+      }
+
+      #sidebar li{
+         padding-left: 1em;
+         margin-bottom: 1em;
+         border: 1px solid black;
+      } 
+
+      #sidebar span{
+      width: 50%;
+      display: inline-block;
+      }
+
+      .visited{
+      color: gray;
+      }
+       
+      .active{
+        background-color: yellow;
+      }
+
+      #sidebar video{
+        display: none;
+      }
+
+    </style>
+    </head>
+    
+    <body>
+        <div id="loading">Please wait while we fetch your videos...</div>
+    
+        <div id="sidebar">
+            <ul></ul>
+        </div>
+        <video autoplay loop></video>
+    
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="hw2.js"></script>
+    </body>
+</body>
+</html>

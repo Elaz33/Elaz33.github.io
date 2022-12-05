@@ -1,0 +1,22 @@
+[
+    {
+    "name":"goose",
+    "picture":"imag3.jpg"
+    },
+    {
+      "name":"duck",
+      "picture":"imag11.jpg"
+    },
+    {
+        "name":"chicken",
+        "picture":"imag.jpg"
+    },
+    {
+        "name":"cow",
+        "picture":"imag10.jpg"
+    },
+    {
+       "name":"sheep",
+       "picture":"imag4.jpg"
+    }
+]
